@@ -14,7 +14,7 @@ body #google-doc-container .google-doc {
   position: absolute;
   width: 826px;
   height: 1066px;
-  background-color: #fff;
+  background-color: #ffff;
   transform-origin: top left;
   transition: all 100ms ease-in-out !important;
   box-shadow: 0px 6px 100px 0px #fff;
