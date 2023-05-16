@@ -1,26 +1,38 @@
 body {
   background-color: #021bff;
-  #google-doc-container {
-    position: absolute;
-    background-color: #021bff;
-    left: 16px;
-    top: 16px;
-    right: 16px;
-    bottom: 16px;
-    overflow: hidden;
-    .google-doc {
-      position: absolute;
-      width: 826px;
-      height: 1066px;
-      background-color: #fff;
-      transform-origin: top left;
-      transition: all 100ms ease-in-out !important;
-      box-shadow: 0px 6px 100px 0px rgb(255, 255, 255);
-    }
-  }
 }
-
-iframe {
+body #google-doc-container {
+  position: absolute;
+  background-color: #021bff;
+  left: 16px;
+  top: 16px;
+  right: 16px;
+  bottom: 16px;
+  overflow: hidden;
+}
+body #google-doc-container .google-doc {
+  position: absolute;
+  width: 826px;
+  height: 1066px;
+  background-color: #fff;
+  transform-origin: top left;
+  transition: all 100ms ease-in-out !important;
+  box-shadow: 0px 6px 100px 0px #fff;
+}
+body #google-doc-container .google-doc:after {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 256px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 93%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  content: "";
+}
+body #google-doc-container .google-doc iframe {
   border: 0;
   width: 826px;
   height: 1066px;
