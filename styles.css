@@ -1,0 +1,27 @@
+body {
+  background-color: #021bff;
+  #google-doc-container {
+    position: absolute;
+    background-color: #021bff;
+    left: 16px;
+    top: 16px;
+    right: 16px;
+    bottom: 16px;
+    overflow: hidden;
+    .google-doc {
+      position: absolute;
+      width: 826px;
+      height: 1066px;
+      background-color: #fff;
+      transform-origin: top left;
+      transition: all 100ms ease-in-out !important;
+      box-shadow: 0px 6px 100px 0px rgb(255, 255, 255);
+    }
+  }
+}
+
+iframe {
+  border: 0;
+  width: 826px;
+  height: 1066px;
+}
